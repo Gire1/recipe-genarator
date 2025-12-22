@@ -7,6 +7,7 @@
     <title>AI recipe genarator</title>
 </head>
 <body>
+    <div class="container">
     <header>
     <h1>Welcome to AI recipe genarator</h1>
     </header>
@@ -16,21 +17,26 @@
             <input type="text" placeholder="Enter the topic of the recipe"
             outofocus
             required
+            autocomplete="off"
+            class="instructions"
             />
-            <input type="submit" />
+            <input type="submit" class="submit-button" />
         </form>
-        <div>
+
+        <div class="recipe">
             the recipe will go here
             <br />
             grilled chicken
         </div>
     </main>
+
     <footer> This  AI project was coded by
     <a href="https://github.com/Gire1/recipe-genarator"target="_blank"> Grace chifamba</a> and is
      <a href="https://github.com/Gire1 " target="_blank"> open-sourced on Github</a>
      and is 
      <a href="https://golden-lolly-abff94.netlify.app/" target="_blank"> hosted on Netlify</a>
     </footer>
+</div>
     <script src="src/index.js"></script>
 </body>
 </html
