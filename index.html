@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>AI recipe generator</title>
 </head>
@@ -15,11 +16,14 @@
 
     <main>
         <form id="recipe-generator-form">
-            <input type="text" placeholder="Enter the topic of the recipe"
+            <input
+             type="text"
+              placeholder="Enter the topic of the recipe"
             outofocus
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
             />
             <input type="submit" class="submit-button" />
         </form>
@@ -27,11 +31,14 @@
         <div class="recipe" id="recipe"></div>
     </main>
 
-    <footer> This  AI project was coded by
+    <footer> 
+        This  AI project was coded by
     <a href="https://github.com/Gire1/recipe-genarator"target="_blank"> Grace chifamba</a> and is
-     <a href="https://github.com/Gire1 " target="_blank"> open-sourced on Github</a>
+     <a href="https://github.com/Gire1 " target="_blank"> 
+        open-sourced on Github</a>
      and is 
-     <a href="https://golden-lolly-abff94.netlify.app/" target="_blank"> hosted on Netlify</a>
+     <a href="https://golden-lolly-abff94.netlify.app/" target="_blank">
+         hosted on Netlify</a>
     </footer>
 </div>
     <script src="src/index.js"></script>
