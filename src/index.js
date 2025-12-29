@@ -19,7 +19,7 @@ function generateRecipe(event) {
   let recipeElement = document.querySelector("#recipe");
   recipeElement.classList.remove("hidden");
   recipeElement.innerHTML = `
-  <div class="text-style blink-smooth">Smooth Blink Text Generating a recipe about ${instructionsInput.value}</div>`;
+  <div class="text-style blink-smooth">Generating a recipe about ${instructionsInput.value}</div>`;
 
   axios.get(apiURL).then(displayRecipe);
 }
